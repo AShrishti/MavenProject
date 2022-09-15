@@ -3,10 +3,10 @@ package com.bridgelabz.javasamples;
 import java.util.Random;
 
 /**
- * Hello world!
+ * Calculating Monthly Employee Wage
  *
  */
-public class App {
+public class EmployeeWage {
 
 	public static void main(String[] args) {
 		int WorkingHours = 0;
