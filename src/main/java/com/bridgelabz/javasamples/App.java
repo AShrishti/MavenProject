@@ -10,8 +10,8 @@ public class App {
 
 	public static void main(String[] args) {
 		int WorkingHours = 0;
-		int isPresent = 1;
-		int isPartTime = 2;
+		// int isPresent = 1;
+		// int isPartTime = 2;
 		int WagePerHour = 20;
 		int DailyEmpWage = 0;
 
@@ -19,20 +19,26 @@ public class App {
 
 		Random random = new Random();
 		int randomcheck = random.nextInt(3);
-
-		if (isPresent == randomcheck) {
+		
+		switch (randomcheck) {
+		case (1): {
 			System.out.println("Employee is Present");
 			WorkingHours = 8;
-
-		} else if (isPartTime == randomcheck) {
+			break;
+		}
+		case (2): {
 			System.out.println("Employee is Present,but worked for PartTime");
 			WorkingHours = 4;
-
-		} else {
+			break;
+		}
+		case (0): {
 			System.out.println("Employee is Absent");
 			DailyEmpWage = 0;
+			break;
+		}
 		}
 		DailyEmpWage = WorkingHours * WagePerHour;
 		System.out.println("Daily Employee Wage of Employee is :" + DailyEmpWage);
+
 	}
 }
