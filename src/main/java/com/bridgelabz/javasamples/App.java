@@ -3,7 +3,7 @@ package com.bridgelabz.javasamples;
 import java.util.Random;
 
 /**
- * Calculating Monthly Employee Wage
+ * Calculating the Monthly Employee Wage
  *
  */
 public class App {
